@@ -12,17 +12,16 @@ for(int i = 0; word[i] != '\0'; i++){
 length = length + 1;
 }
 
-for(int i = 0; i < length; i++){
+for(int i = 0; i < length / 2; i++){
 
 if(word[i] != word[length - 1 - i]){
 palindrome = 0;
-break;
 }
 }
 if(palindrome == 0){
-printf("%s is not a palindrome\n", word);
+printf("Not a palindrome\n");
 }
 else{
-printf("%s is a palindrome\n", word);
+printf("A palindrome\n");
 }
 }
